@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пожертвуйте Искандару Ишанову</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0066cc;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            border: 5px solid #0066cc;
+            border-radius: 10px;
+            margin: 20px 0;
+            max-width: 100%;
+        }
+
+        .donate-button {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            font-size: 24px;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+            .donate-button:hover {
+                background-color: #e65c00;
+            }
+
+        .story {
+            text-align: left;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .counter {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0066cc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Пожертвуйте Искандару Ишанову</h1>
+
+        <img src="https://via.placeholder.com/400x300" alt="Искандар Ишанов" class="photo">
+
+        <div class="counter">Всего пожертвований: $0</div>
+
+        <a href="https://www.donationalerts.com/r/histon936" target="_blank" class="donate-button">Пожертвовать сейчас</a>
+
+        <div class="story">
+            <p>Искандар Ишанов - замечательный человек. Если вы пожертвуете хоть 100 рублей, то я буду очень рад.</p>
+            <p>Я не прошу деньги на лечение моей язвы желудка. Если вам некуда девать деньги то дайте мне.</p>
+        </div>
+
+        <div id="donate">
+            <h2>Способы пожертвования</h2>
+            <p>Donation Alerts: <a href="https://www.donationalerts.com/r/histon936" target="_blank">https://www.donationalerts.com/r/histon936</a></p>
+        </div>
+
+        <div class="footer">
+            <p>Сайт создан Искандаром Ишановым | Контакт: iskandarisanov6@gmail.com</p>
+            <p>© 2023 Пожертвуйте Искандару Ишанову. Все права защищены.</p>
+        </div>
+    </div>
+
+    <script>
+        let amount = 0;
+        setInterval(() => {
+            amount += Math.floor(Math.random() * 1);
+            document.querySelector('.counter').textContent = `Всего пожертвований: $${amount.toLocaleString()}`;
+        }, 5000);
+    </script>
+</body>
+</html>
